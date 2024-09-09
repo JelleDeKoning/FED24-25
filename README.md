@@ -57,6 +57,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  ⋅⋅* Hele website is gemaakt met Shopify 
+  ⋅⋅* Geen enkele afbeelding is goed beschreven d.m.v. een alt tekst
+  ⋅⋅* Website staat vol met rare divs
+  ⋅⋅* Website is niet focusbaar door middel van TAB.
+
 
 </details>
 
