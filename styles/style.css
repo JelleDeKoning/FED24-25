@@ -15,7 +15,7 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text:#000000;
 	--color-background:#eee;
 }
 
@@ -29,3 +29,33 @@
 
 /* jouw code */
 
+header {
+	display:flex;
+	justify-content:space-between;
+	padding: 0em 0.8em 0em 0.8em;
+}
+
+header nav {
+	background-color:var(--color-text);
+	display:flex;
+	padding: 8px;
+	align-items: center;
+	border-radius:8px;
+}
+
+header p {
+	color:var(--color-background);
+	margin:0;
+}
+
+header svg {
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+
+header img {
+aspect-ratio: 1/1;
+	width:2.5em;
+	order:-1;
+}
