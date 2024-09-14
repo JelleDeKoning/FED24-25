@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <div>
     <header>
       <img
         src="//upfront.nl/cdn/shop/files/logo_quick.png?v=1623501434"
@@ -106,26 +107,24 @@
     </header>
     <main>
 
-      <div>
-      <p>U</p>
-      <p>p</p>
-      <p>f</p>
-      <p>r</p>
-      <p>o</p>
-      <p>n</p>
-      <p>t</p>
-
-    </div>
+<h1><span>U</span><span>p</span><span>f</span><span>r</span><span>o</span><span>n</span><span>t</span></h1>
       <model-viewer
-        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+        alt="Een proteine reep chocolade met zeezout"
         src="assets/UpfrontSaltedBrownie_WEB_2.glb"
         shadow-intensity="1"
-        camera-controls
-        touch-action="pan-y"
+        camera-orbit="180deg 90deg"
+        camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+        disable-zoom
+        disable-tap
+        ar-status="not-presenting"
+        poster
+        style="transform: translateY(0%) scale(1);"
       ></model-viewer>
 
       <h2>We zetten de inhoud voorop, 't zit in de naam.</h2>
 
+    </div>
+      
       <h2>Top 10</h2>
 
       <input
@@ -148,7 +147,7 @@
       <label for="snacks">Snacks</label>
 
       <article>
-        <h3>Clear Whey Limonade</h3>
+        <a href="#"><h3>Clear Whey Limonade</h3></a>
         <p>€29 700g ┃ 28 porties</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -167,10 +166,11 @@
           ></path>
         </svg>
         <p>4.7 (1126 reviews)</p>
-        <img
+        <a href="#"><img
           src="https://cdn.shopify.com/s/files/1/0254/4667/8590/files/ClearWheyLimonade_Mojito_still.jpg?v=1720189741&width=600"
           alt="Een afbeelding van een zak Clear Whey eiwit poeder in de smaak Mojito"
-        />
+        /></a>
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="product-item__quick-add-icon"><path d="M10 5V15M15 10L5 10" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
       </article>
 
       <article>

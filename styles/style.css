@@ -5,7 +5,25 @@
   box-sizing:border-box;  
 }
 
+@font-face {
+    font-family: "Blender Bold";
+    src: url("Blender-Bold.woff2") format("woff2");
+}
 
+@font-face {
+    font-family: "Blender Strong";
+    src: url("Blender-Strong.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Blender Medium";
+    src: url("Blender-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Blender Book";
+    src: url("Blender-Book.woff2") format("woff2");
+}
 
 
 
@@ -17,6 +35,18 @@
 	/* startje */
 	--color-text:#000000;
 	--color-background:#eee;
+	--secundaire-tekst: #8d8d8d;
+
+	--font-body-family: 'Blender Book';
+    --font-body-style: normal;
+    --font-body-weight: 400;
+    --font-body-weight-bold: 400;
+    --font-body-medium-family: 'Blender Medium';
+    --font-body-bold-family: 'Blender Bold';
+    --font-heading-family: 'Blender Strong';
+    --font-heading-style: normal;
+    --font-heading-weight: 400;
+
 }
 
 
@@ -111,4 +141,135 @@ aspect-ratio: 1/1;
 
 main div:first-of-type {
 display:flex;
+}
+
+main h1 {
+	font-size: 3.5em;
+	font-family: var(--font-heading-family);
+
+}
+body div {
+	width: 100%;
+    /* height: 100vh; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    background: radial-gradient(182.66% 71.08% at 49.49% 50%, #f1f1f1, #afaeae);
+}
+
+model-viewer {
+	width: 100%;
+    height: 55%;
+    bottom: 60px;
+    object-fit: cover;
+    position: absolute;
+    --progress-bar-color: none;
+    --progress-bar-height: 0px;
+    transition: .3s;
+    transform: translateY(30%);
+}
+
+model-viewer > h2 {
+	font-size: 2em;
+	font-family: var(--font-body-bold-family);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-top: 1em;
+}
+
+
+
+/* Product Cards  */
+
+article {
+display:grid;
+grid-template-rows:1fr max-content;
+grid-template-columns:1fr;
+width: max-content;
+}
+
+
+/* Product Titel */
+article a:nth-of-type(1) {
+	grid-row-start:3;
+
+	font-family: var(--font-body-bold-family);
+	display: block;
+    cursor: pointer;
+    color: #000;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -.4px;
+    padding-bottom: 6px;
+    overflow-wrap: break-word;
+    width: 93%;
+    max-width: 275px;
+	text-decoration: none;
+}
+
+article p:nth-of-type(1) {
+	grid-row-start:4;
+
+	color: var(--font-body-family, #8d8d8d);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -.32px;
+    margin-inline-start: 4px;
+	font-family: var(--font-body-family);
+}
+
+article p:nth-of-type(2) {
+	grid-row-start:2;
+	grid-column-start: 1;
+
+	align-self: center;
+	margin-left: 1.5em;
+
+	color: var(--Text-Text-4, #8d8d8d);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -.32px;
+	font-family: var(--font-body-family);
+}
+
+article svg {
+	grid-row-start:2;
+	grid-column-start: 1;
+
+	align-self: center;
+}
+
+/* Product Afbeelding */
+article a:nth-of-type(2) {
+	grid-column-start:1;
+	grid-column-end:-1;
+	grid-row-start:1;
+	border-radius: 4px;
+}
+
+article button {
+  grid-column-start:1;
+  grid-row-start:1;
+  justify-self:end;
+  align-self:end;
+  
+
+  aspect-ratio:1/1;
+  margin:1rem;
+
+  border: none;
+  background-color:var(--color-background);
+  align-items: center;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 0.5em;
+
+svg {
+	stroke-width: 1.25;
+}
 }
