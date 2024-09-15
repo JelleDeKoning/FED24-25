@@ -50,7 +50,10 @@
 }
 
 
-
+html body {
+    height: auto;
+    min-height: 100dvh;
+}
 
 
 /****************/
@@ -140,18 +143,16 @@ aspect-ratio: 1/1;
 	width:2.5em;
 }
 
-main div:first-of-type {
-display:flex;
-}
+
 
 main h1 {
 	font-size: 3.5em;
 	font-family: var(--font-heading-family);
 
 }
-body div {
+body div:nth-of-type(1) {
 	width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: sticky;
     top: 0;
     left: 0;
@@ -220,6 +221,20 @@ article h3 {
     margin:0;
 }
 
+article a img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 1;
+    height:auto;
+aspect-ratio: 205 / 274;
+width: 30vw;
+border-radius: 8px;
+max-width: 20em;
+}
+
 article p:nth-of-type(1) {
 	grid-row-start:4;
 
@@ -260,6 +275,7 @@ article a:nth-of-type(2) {
 	grid-column-end:-1;
 	grid-row-start:1;
 	border-radius: 4px;
+
 }
 
 article button {
@@ -283,4 +299,11 @@ svg {
 }
 }
 
+div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5em;
+    row-gap: 1.2em;
+    max-width: 1200px;
+}
 
