@@ -151,8 +151,8 @@ main h1 {
 
 }
 body div:nth-of-type(1) {
-	width: 100%;
-    /* height: 100vh; */
+    width: 100%;
+    height: 100vh;
     position: sticky;
     top: 0;
     left: 0;
@@ -180,6 +180,15 @@ model-viewer > h2 {
 	padding: 0;
 	text-align: center;
 	margin-top: 1em;
+}
+
+body H2 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1;
+    font-family: var(--font-body-bold-family);
+    font-weight: 700;
+    color: #585858;
 }
 
 
@@ -305,5 +314,13 @@ div:nth-of-type(2) {
     column-gap: 0.5em;
     row-gap: 1.2em;
     max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    body div:nth-of-type(1) {
+        border-radius: var(--Banner, 8px);
+        top: var(--xo-container-gap);
+        height: calc(100vh - 2* 16px);
+    }
 }
 
