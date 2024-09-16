@@ -1,0 +1,120 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#000000;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+
+header button {
+	border: none;
+	background-color:var(--color-text);
+	display:flex;
+	align-items: center;
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 0.5em;
+}
+
+header {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 5em;
+	text-transform: uppercase;
+}
+
+/* Styling voor het hamburger menu */
+
+nav ul {
+	background-color: var(--color-background);
+
+	/* translate: 100%; */
+
+	position:fixed;
+	inset:0;
+}
+
+nav ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-rows: repeat(2, 0.2fr);
+    gap: 8px;
+}
+    
+nav ul li img {
+    grid-row: span 2 / span 2;
+}
+
+
+nav ul li p:first-of-type {
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+	color: var(--color-text);
+}
+
+nav ul li p:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+	width:223px;
+	height:40px;
+
+	color: var(--color-text);
+}
+        
+
+
+
+header p {
+	color:var(--color-background);
+	margin:0;
+}
+
+header svg {
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+
+header img {
+aspect-ratio: 1/1;
+	width:2.5em;
+}
+
+main div:first-of-type {
+display:flex;
+}
+
+svg {
+	fill:lime;
+	stroke-width:1.5;
+	stroke-linecap:round;
+}
