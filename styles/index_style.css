@@ -63,21 +63,7 @@ html body {
 /* jouw code */
 
 
-header button {
-	border: none;
-	background-color:var(--color-text);
-	display:flex;
-	align-items: center;
-	padding: 0.5em 1em 0.5em 1em;
-	border-radius: 0.5em;
-}
 
-header {
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-    width: 170vw;
-}
 
 h1 {
 	text-align: center;
@@ -85,63 +71,7 @@ h1 {
 	text-transform: uppercase;
 }
 
-/* Styling voor het hamburger menu */
 
-nav ul {
-	background-color: var(--color-background);
-
-	translate: 100%;
-
-	position:fixed;
-	inset:0;
-}
-
-nav ul li {
-    display: grid;
-    grid-template-columns: repeat(2, 0.2fr);
-    grid-template-rows: repeat(2, 0.2fr);
-    gap: 8px;
-}
-    
-nav ul li img {
-    grid-row: span 2 / span 2;
-}
-
-
-nav ul li p:first-of-type {
-    grid-column-start: 2;
-    grid-row-start: 1;
-
-	color: var(--color-text);
-}
-
-nav ul li p:nth-of-type(2) {
-    grid-column-start: 2;
-    grid-row-start: 2;
-	width:223px;
-	height:40px;
-
-	color: var(--color-text);
-}
-        
-
-
-
-header p {
-	color:var(--color-background);
-	margin:0;
-}
-
-header svg {
-	display:block;
-	max-width:100%;
-	height:auto;
-}
-
-header img {
-aspect-ratio: 1/1;
-	width:2.5em;
-}
 
 
 
@@ -153,7 +83,6 @@ main h1 {
 body div:nth-of-type(1) {
     width: 100%;
     height: 100vh;
-    position: sticky;
     top: 0;
     left: 0;
     display: block;
@@ -287,26 +216,7 @@ article a:nth-of-type(2) {
 
 }
 
-article button {
-  grid-column-start:1;
-  grid-row-start:1;
-  justify-self:end;
-  align-self:end;
-  
 
-  aspect-ratio:1/1;
-  margin:1rem;
-
-  border: none;
-  background-color:var(--color-background);
-  align-items: center;
-  padding: 0.5em 1em 0.5em 1em;
-  border-radius: 0.5em;
-
-svg {
-	stroke-width: 1.25;
-}
-}
 
 div:nth-of-type(2) {
     display: grid;
@@ -316,11 +226,28 @@ div:nth-of-type(2) {
     max-width: 1200px;
 }
 
-@media (min-width: 768px) {
-    body div:nth-of-type(1) {
-        border-radius: var(--Banner, 8px);
-        top: var(--xo-container-gap);
-        height: calc(100vh - 2* 16px);
-    }
-}
+
+
+article button {
+    grid-column-start:1;
+    grid-row-start:1;
+    justify-self:end;
+    align-self:end;
+    
+  
+    aspect-ratio:1/1;
+    margin:1rem;
+  
+    border: none;
+    background-color:var(--color-background);
+    align-items: center;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+  
+  svg {
+      stroke-width: 1.25;
+  }
+  }
+
+
 
