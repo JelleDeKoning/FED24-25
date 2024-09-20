@@ -4,11 +4,16 @@ main section:first-of-type {
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
 
+
 }
 
 video {
     grid-row: span 2 / span 2;
-
+max-width: 100%;
+min-width:228px;
+height: auto;
+border-radius: 4px;
+justify-self: right;
 }
 
 section:first-of-type img:nth-of-type(2) {
@@ -18,5 +23,10 @@ section:first-of-type img:nth-of-type(2) {
 }
 
 section img {
+    max-width: 50%;
+    min-width:114px;
+    height: auto;
+    border-radius: 4px;
+    justify-self: left;
 }
 
