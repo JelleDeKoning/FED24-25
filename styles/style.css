@@ -5,7 +5,25 @@
   box-sizing:border-box;  
 }
 
+@font-face {
+    font-family: "Blender Bold";
+    src: url("Blender-Bold.woff2") format("woff2");
+}
 
+@font-face {
+    font-family: "Blender Strong";
+    src: url("Blender-Strong.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Blender Medium";
+    src: url("Blender-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Blender Book";
+    src: url("Blender-Book.woff2") format("woff2");
+}
 
 
 

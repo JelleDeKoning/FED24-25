@@ -1,19 +1,67 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+
+  @font-face {
+    font-family: "Blender Bold";
+    src: url("Blender-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Blender Strong";
+    src: url("Blender-Strong.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Blender Medium";
+    src: url("Blender-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Blender Book";
+    src: url("Blender-Book.woff2") format("woff2");
+}
+
+:root {
+	/* startje */
+	--color-text:#000000;
+	--color-background:#eee;
+	--secundaire-tekst: #8d8d8d;
+
+	--font-body-family: 'Blender Book';
+    --font-body-style: normal;
+    --font-body-weight: 400;
+    --font-body-weight-bold: 400;
+    --font-body-medium-family: 'Blender Medium';
+    --font-body-bold-family: 'Blender Bold';
+    --font-heading-family: 'Blender Strong';
+    --font-heading-style: normal;
+    --font-heading-weight: 400;
+    --font-body-scale: 1.0;
+
+}
+
+
+
+
+
+
+
 main section:first-of-type {
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
     gap: 16px;
+    justify-content: start;
 
 
 }
 
 video {
     grid-row: span 2 / span 2;
-max-width: 100%;
-min-width:228px;
-height: auto;
-border-radius: 4px;
-justify-self: right;
+    width:100%;
+    height: auto;
+
 }
 
 section:first-of-type img:nth-of-type(2) {
@@ -23,10 +71,5 @@ section:first-of-type img:nth-of-type(2) {
 }
 
 section img {
-    max-width: 50%;
-    min-width:114px;
-    height: auto;
-    border-radius: 4px;
-    justify-self: left;
 }
 
