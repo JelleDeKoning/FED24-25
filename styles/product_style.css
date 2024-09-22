@@ -1,75 +1,179 @@
-*, *::after, *::before {
-    box-sizing:border-box;  
-  }
-
-  @font-face {
-    font-family: "Blender Bold";
-    src: url("Blender-Bold.woff2") format("woff2");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Blender Strong";
-    src: url("Blender-Strong.woff2") format("woff2");
+  font-family: "Blender Bold";
+  src: url("Blender-Bold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Blender Medium";
-    src: url("Blender-Medium.woff2") format("woff2");
+  font-family: "Blender Strong";
+  src: url("Blender-Strong.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Blender Book";
-    src: url("Blender-Book.woff2") format("woff2");
+  font-family: "Blender Medium";
+  src: url("Blender-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Blender Book";
+  src: url("Blender-Book.woff2") format("woff2");
 }
 
 :root {
-	/* startje */
-	--color-text:#000000;
-	--color-background:#eee;
-	--secundaire-tekst: #8d8d8d;
+  /* startje */
+  --color-text: #000000;
+  --color-background: #eee;
+  --secundaire-tekst: #8d8d8d;
 
-	--font-body-family: 'Blender Book';
-    --font-body-style: normal;
-    --font-body-weight: 400;
-    --font-body-weight-bold: 400;
-    --font-body-medium-family: 'Blender Medium';
-    --font-body-bold-family: 'Blender Bold';
-    --font-heading-family: 'Blender Strong';
-    --font-heading-style: normal;
-    --font-heading-weight: 400;
-    --font-body-scale: 1.0;
-
+  --font-body-family: "Blender Book";
+  --font-body-style: normal;
+  --font-body-weight: 400;
+  --font-body-weight-bold: 400;
+  --font-body-medium-family: "Blender Medium";
+  --font-body-bold-family: "Blender Bold";
+  --font-heading-family: "Blender Strong";
+  --font-heading-style: normal;
+  --font-heading-weight: 400;
+  --font-body-scale: 1;
 }
 
+body {
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+}
 
-
-
-
-
-
-main section:first-of-type {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: auto;
-    gap: 16px;
-    justify-content: start;
-
-
+main > section:first-of-type {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8em;
+  align-items: start;
+  width: 100%;
 }
 
 video {
-    grid-row: span 2 / span 2;
-    width:100%;
-    height: auto;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: 100%;
+}
 
+main section:first-of-type img {
+  grid-column: 2 / 3;
+  aspect-ratio: 1/1;
+  width: 500px;
+  height: 500px;
 }
 
 section:first-of-type img:nth-of-type(2) {
-    grid-column-start: 2;
-    grid-row-start: 2;
-
+  grid-row: 2 / 3;
 }
 
-section img {
+section:first-of-type img:nth-of-type(1) {
+  grid-row: 1 / 2;
 }
 
+section:nth-of-type(2) {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    text-decoration: none;
+    color: var(--Text-Text-1, #121212);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+    margin-inline-start: 4px;
+    font-size: 1em;
+
+    p {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h1 {
+    color: #000;
+    font-family: var(--font-body-bold-family);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.72px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5em;
+      margin-top: 0.5em;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1em;
+  padding: 0.4em 0.6em;
+  background-color: #e8e8e8;
+  border-radius: 4px;
+  margin: 2em 0 2em 0;
+
+  p {
+    margin-top: 0.5em;
+  }
+}
+
+section:nth-of-type(3) {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0 2em 0 2em;
+
+  label {
+    color: var(--Text-Text-1, #121212);
+    font-family: var(--font-body-medium-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    padding: 1em;
+  }
+
+  span {
+    color: var(--Text-Text-4, #8d8d8d);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+  }
+
+  INPUT {
+    width: 1em;
+    height:auto;
+    color:black;
+  }
+}

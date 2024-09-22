@@ -9,105 +9,108 @@
 
     <link href="styles/index_style.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" href="images/fav_icon_png.webp" />
+    <script defer src="scripts/script.js"></script>
+    <script
+      defer
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
   </head>
 
   <body>
     <div>
     <header>
-      <img
-        src="//upfront.nl/cdn/shop/files/logo_quick.png?v=1623501434"
-        alt="Het logo van upfront, twee handen die elkaar schudden"
-      />
-      <!-- Het logo beschrijft waar je bent dus bij de ALT tekst hoef je niet te zeggen dat het een logo is. -->
+      <a href="index.html">
+        <img
+          src="//upfront.nl/cdn/shop/files/logo_quick.png?v=1623501434"
+          alt="Een link naar de homepagina van Upfront"
+        />
+      </a>
       <button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-
-        >
-          <path
-            d="M7 8H17M7 12H17M7 16H17"
-
-            stroke-width="1.5"
-            stroke-linecap="round"
-          ></path>
+        <svg 
+          width="24" 
+          height="24" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_429_11066)">
+            <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
         </svg>
-        <!-- SVG in css zetten en niet in HTML  -->
-         <!-- Een SVG zoeken met een PATH -->
         <p>Shop</p>
       </button>
+      
 
       <nav>
-        <ul>
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-          <!-- Mag allemaal in een A en strong gebruiken -->
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-          <li>
-            <img
-              src="images/Alles.webp"
-              alt="Een foto van verschillende Upfront producten die vliegen "
-            />
-            <p>Alles</p>
-            <p>Van voeding tot supplementen, alles voor een sterke basis.</p>
-          </li>
-        </ul>
+        <p>Shop</p>
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M7.28033 6.21967C6.98744 5.92678 6.51256 5.92678 6.21967 6.21967C5.92678 6.51256 5.92678 6.98743 6.21967 7.28032L10.9394 12L6.21967 16.7197C5.92678 17.0126 5.92678 17.4874 6.21967 17.7803C6.51256 18.0732 6.98744 18.0732 7.28033 17.7803L12.0001 13.0607L16.7197 17.7802C17.0126 18.0731 17.4874 18.0731 17.7803 17.7802C18.0732 17.4873 18.0732 17.0125 17.7803 16.7196L13.0607 12L17.7803 7.28043C18.0732 6.98754 18.0732 6.51267 17.7803 6.21978C17.4874 5.92689 17.0126 5.92689 16.7197 6.21978L12.0001 10.9394L7.28033 6.21967Z" fill="#1E1E1E"></path>
+        </svg> </button>
+<ul>
+<li>
+  <a href="#">
+    <p>Alles</p>
+    <img src="images/Alles.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+<li>
+  <a href="#">
+    <p>Voeding</p>
+    <img src="images/voeding.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+<li>
+  <a href="#">
+    <p>Eiwit Shakes</p>
+    <img src="images/eiwit.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+<li>
+  <a href="#">
+    <p>Snacks</p>
+    <img src="images/snacks.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+<li>
+  <a href="#">
+    <p>Creatine</p>
+    <img src="images/creatine.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+
+<li>
+  <a href="#">
+    <p>Duursport</p>
+    <img src="images/duursport.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+
+<li>
+  <a href="#">
+    <p>Pre-workout</p>
+    <img src="images/preworkout.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+<li>
+  <a href="#">
+    <p>Supplementen</p>
+    <img src="images/supplementen.webp" alt="Een foto van alle UpFront producten in een vliegende formatie">
+  </a>
+</li>
+</ul>
+
+<ul>
+<li><a href="#">Over ons</a></li>
+<li><a href="#">Werken bij</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Zakelijk</a></li>
+
+
+</ul>
+
+
+
       </nav>
     </header>
     <main>
@@ -130,6 +133,10 @@
 
     </div>
       
+    
+    
+    <!-- Eerste section -->
+    <section>
       <h2>Top 10</h2>
 
       <input
@@ -173,14 +180,42 @@
         </svg>
         <p>4.7 (1126 reviews)</p>
         <a href="#"><img
-          src="https://cdn.shopify.com/s/files/1/0254/4667/8590/files/ClearWheyLimonade_Mojito_still.jpg?v=1720189741&width=600"
+          src="images/eiwitLimonade.webp"
           alt="Een afbeelding van een zak Clear Whey eiwit poeder in de smaak Mojito"
         /></a>
         <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="product-item__quick-add-icon"><path d="M10 5V15M15 10L5 10" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
       </article>
+      <article>
+        <a href="#"><h3>Eiwit IJskoffie</h3></a>
+        <p>€29 700g ┃ 28 porties</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M8.06699 1.93097L10.0443 5.96836L14.467 6.61981L11.267 9.76053L12.0222 14.1974L8.06699 12.1016L4.11179 14.1974L4.86699 9.76053L1.66699 6.61981L6.08906 5.96836L8.06699 1.93097Z"
+            fill="#000"
+            stroke="#000"
+            stroke-width="0.725425"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        <p>4.7 (1126 reviews)</p>
+        <a href="#"><img
+          src="images/eiwitIjskoffie.webp"
+          alt="Een afbeelding van een zak Clear Whey eiwit poeder in de smaak Mojito"
+        /></a>
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="product-item__quick-add-icon"><path d="M10 5V15M15 10L5 10" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+      </article>
+      
+      
 
       <article>
-  <a href="#"><h3>Eiwitreep</h3></a>
+  <a href="#"><h3>Vegan PRO IJskoffie</h3></a>
   <p>€26 ┃ 12 repen</p>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +235,7 @@
   </svg>
   <p>4.6 (963 reviews)</p>
   <a href="#"><img
-    src="https://cdn.shopify.com/s/files/1/0254/4667/8590/files/Eiwitreep_pindakaas_still_16b841ba-a78b-43aa-9d02-4b5c1eb368da.jpg?v=1719481059&width=600"
+    src="images/veganEiwit.webp"
     alt="Een afbeelding van een Eiwitreep in de smaak pindakaas"
   /></a>
   <button>
@@ -224,7 +259,7 @@
 </article>
 
 <article>
-  <a href="product.html"><h3>Whey Milkshake</h3></a>
+  <a href="product.html"><h3>Eiwit Oats</h3></a>
   <p>€29 1kg ┃ 33 shakes</p>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +279,7 @@
   </svg>
   <p>4.8 (1042 reviews)</p>
   <a href="#"><img
-    src="https://cdn.shopify.com/s/files/1/0254/4667/8590/files/ClearWheyLimonade_Mojito_still.jpg?v=1720189741&width=600"
+    src="images/eiwitOats.webp"
     alt="Een afbeelding van een Whey Milkshake"
   /></a>
   <button>
@@ -268,16 +303,19 @@
 </article>
 
 <button>Laad meer producten</button>
-
+</section>
 </section>
 
 
 
-      <h3>Upfront-prestaties in elke divisie.</h3>
+
+
+<section>
+      <h2><strong>Upfront</strong>-prestaties in elke divisie.</h2>
 
       <a href="#">
         <img
-          src="//upfront.nl/cdn/shop/files/20240805_MARK_GYM-27_1.png?v=1725543313&width=600"
+          src="images/pullup.webp"
           alt="Een foto van een man die een pull-up uitvoert"
         />
         <p>Gym</p>
@@ -285,29 +323,40 @@
 
       <a href="#">
         <img
-          src="//upfront.nl/cdn/shop/files/Upfront-kledingshoot-20723-1569-2_5_2_019b98c7-cea8-44cb-875a-9800ba5d9a3a.png?v=1725542996&width=600"
+          src="images/rennen.webp"
           alt="Een foto van een man die aan het hardlopen is"
         />
-        <p>Hardlopen</p>
+        <p>Duursport</p>
       </a>
 
       <a href="#">
         <img
-          src="//upfront.nl/cdn/shop/files/20240626ALPENDAG4-12_1_2.png?v=1725543031&width=600"
+          src="images/stretch.webp"
           alt="Een foto van een vrouw die aan het strekken is met een fles eiwit limonade naast haar"
         />
         <p>Lifestyle</p>
       </a>
+      
+      
+      
+      
+      
+    </section>
+
+    <section>
+      <p>Onze visie</p>
+      <h2>Waar wij in geloven? <span> wat oprecht is </span> uiteindelijk altijd <span> wint.</span></h2>
+      <a href="#">Over Upfront</a>
+      <img
+        src="images/er.webp"
+        alt="Een foto van een vrouw op een steen en een man met zijn voeten in het water aan de oever van een bergmeer met een grote berg op de achtergrond"
+      />
+
+    </section>
     </main>
 
     <footer>
-      <p>Onze visie</p>
-      <h2>Waar wij in geloven> Dat wat oprecht is uiteindelijk altijd wint.</h2>
-      <button>Over Upfront</button>
-      <img
-        src="//upfront.nl/cdn/shop/files/image2.jpg?v=1725459742&width=645"
-        alt="Een foto van een vrouw op een steen en een man met zijn voeten in het water aan de oever van een bergmeer met een grote berg op de achtergrond"
-      />
+      
 
       <ul>
         <li><a href="#">Over Upfront</a></li>
@@ -316,6 +365,7 @@
         <li><a href="#">Zakelijk</a></li>
       </ul>
 
+      <hr>
       <ul>
         <li>
           <a href="#">
@@ -402,11 +452,6 @@
       <a href="#">Wettelijk</a>
     </footer>
 
-    <script defer src="scripts/script.js"></script>
-    <script
-      defer
-      type="module"
-      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
-    ></script>
+
   </body>
 </html>
