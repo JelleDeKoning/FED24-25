@@ -403,7 +403,6 @@ section:nth-of-type(3) {
 
 @media (min-width: 768px) {
   section:nth-of-type(3) {
-
 ul {
   display:flex;
   flex-direction: row;

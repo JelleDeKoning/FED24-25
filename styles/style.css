@@ -57,7 +57,7 @@ nav.toonMenu {
   overflow:hidden;
 }
 
-nav {
+header nav {
 
 	translate:100% 0%;
 	transition:translate .3s;
