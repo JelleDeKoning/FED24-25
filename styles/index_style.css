@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+
+
 /**************/
 /* FONT FACES */
 /**************/
@@ -30,6 +32,7 @@
   src: url("Blender-Book.woff2") format("woff2");
 }
 
+
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -37,6 +40,9 @@
   --color-text: #000000;
   --color-background: #eee;
   --secundaire-tekst: #8d8d8d;
+  --tertaire-tekst:#ffffffb3;
+  --gradient-start: #f1f1f1;
+  --gradient-end: #afaeae;
 
   --font-body-family: "Blender Book";
   --font-body-style: normal;
@@ -60,8 +66,8 @@
   --font-size-h1: 3.5em;
   --font-size-h2: 2em;
   --font-size-label: 1em;
-  --font-size-product-link: 19px;
-  --font-size-product-text: 16px;
+  --font-size-product-link: 1.1875em; /* 1.1875em -> 1.1875em */
+  --font-size-product-text: 1em; /* 1em -> 1em */
   --font-size-button: 1.2em;
 
   --font-weight-h2: 700;
@@ -71,29 +77,83 @@
   --font-weight-button: 500;
 
   --line-height-h2: 1;
-  --line-height-label: 18px;
-  --line-height-product-link: 22px;
-  --line-height-product-text: 20px;
-  --line-height-button: 22px;
+  --line-height-label: 1.125em; /* 1.125em -> 1.125em */
+  --line-height-product-link: 1.375em; /* 1.375em -> 1.375em */
+  --line-height-product-text: 1.25em; /* 1.25em -> 1.25em */
+  --line-height-button: 1.375em; /* 1.375em -> 1.375em */
 
-  --letter-spacing-product-link: -0.4px;
-  --letter-spacing-product-text: -0.32px;
-  --letter-spacing-button: -0.4px;
+  --letter-spacing-product-link: -0.025em; /* -0.025em -> -0.025em */
+  --letter-spacing-product-text: -0.02em; /* -0.02em -> -0.02em */
+  --letter-spacing-button: -0.025em; /* -0.025em -> -0.025em */
 
-  --border-radius-label: 4px;
-  --border-radius-product-img: 8px;
-  --border-radius-product-link: 4px;
+  --border-radius-label: 0.25em; /* 0.25em -> 0.25em */
+  --border-radius-product-img: 0.5em; /* 0.5em -> 0.5em */
+  --border-radius-product-link: 0.25em; /* 0.25em -> 0.25em */
   --border-radius-button: 0.5em;
 
   --aspect-ratio-product-img: 205 / 274;
   --aspect-ratio-button: 1 / 1;
 
   --transition-duration: 0.3s;
+
+  
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-text: #ffffff;
+    --color-background: #121212;
+    --secundaire-tekst: #b3b3b3;
+    --tertaire-tekst: #ffffff80;
+
+    --gradient-start: #2a2a2a;
+    --gradient-end: #1a1a1a;
+  
+  --gradient-dark-start: #2a2a2a;
+  --gradient-dark-end: #1a1a1a;
+
+    --color-label-bg: #000000;
+    --color-label-border: #555555;
+    --color-label-bg-checked: #ffffff;
+    --color-label-text-checked: #000000;
+    --color-product-link: #ffffff;
+    --color-product-text: #b3b3b3;
+    --color-product-text-alt: #b3b3b3;
+    --color-button-bg: #444444;
+
+  
+  }
+
+
+  main {
+    background-color: #1a1a1a;
+
+  }
+
+  img {
+    filter: brightness(0.8);  
+  }
+
+
+
+
+
+}
+
+
+
+
+
+  
 
 body {
   overflow-x:hidden;
 }
+
+
+
+
 
 /****************/
 /* JOUW STYLING */
@@ -102,7 +162,6 @@ h1 {
   text-align: center;
   margin-top: 1em;
   text-transform: uppercase;
-  color: var(--Black, #000);
   text-align: center;
   font-family: var(--font-heading-family);
   font-size: clamp(80px, 7vw, 120px);
@@ -111,7 +170,6 @@ h1 {
 @media (min-width: 768px) {
   h1 {
       font-size: clamp(120px, 21vw, 306px);
-      letter-spacing: -6.133px;
 
       margin-bottom:1em;
   }
@@ -127,7 +185,7 @@ body section:nth-of-type(1) {
   left: 0;
   display: block;
   overflow: hidden;
-  background: radial-gradient(182.66% 71.08% at 49.49% 50%, #f1f1f1, #afaeae);
+  background: radial-gradient(182.66% 71.08% at 49.49% 50%, var(--gradient-start), var(--gradient-end));
 }
 
 section:nth-of-type(1) h2 {
@@ -224,7 +282,8 @@ section:nth-of-type(2) > button:last-of-type {
   cursor: pointer;
   background-color: var(--color-label-bg);
   margin-top: 3em;
-  padding: 3em 0;
+  width:100%;
+  height:3em;
   font-family: var(--font-body-family);
   font-size: var(--font-size-button);
   font-style: normal;
@@ -347,15 +406,13 @@ section:nth-of-type(3) {
     flex-direction: column;
     padding: 1em;
     margin:auto;
-    max-width:87.5em;
-
     list-style:none;
     
    }
 
   h2 {
     align-self: flex-start;
-    color: #8f8f8f;
+    color: var(--secundaire-tekst);
     text-align: left;
     font-family: var(--font-body-bold-family);
     font-style: normal;
@@ -367,7 +424,7 @@ section:nth-of-type(3) {
 
 
     strong {
-        color: #121212;
+        color: var(--color-product-link)
     }
   }
   li {
@@ -388,7 +445,7 @@ section:nth-of-type(3) {
       font-style: normal;
       line-height: 1.33;
 
-      color: var(--color-label-bg);
+      color: var(--color-product-link);
       margin: 0;
     }
     img {
@@ -403,6 +460,9 @@ section:nth-of-type(3) {
 
 @media (min-width: 768px) {
   section:nth-of-type(3) {
+
+max-width: 87.5em;
+margin:auto;
 ul {
   display:flex;
   flex-direction: row;
@@ -421,13 +481,10 @@ ul {
       flex-basis: calc(100%/3);
   
     }
-h2 {
-  width:100vw;
-  }
 
   a {
     position:relative;
-    width:26.75em;
+    width:100%;
       height:30.8125em;
       transition:0.5s;
   }
@@ -445,6 +502,7 @@ h2 {
   li:hover {
   flex-grow: 1;
   flex-basis:50%;
+  filter:none;
   }
 
 
@@ -455,21 +513,14 @@ h2 {
 
 section:nth-of-type(4) {
   position:relative;
+  margin:auto;
 
-
-
-  img {
-    object-fit: cover;
-    width:100%;
-    border-radius: var(--border-radius-product-img);
-    
-  }
 
   h2 {
     position:absolute;
     top:0.5em;
     left:10%;
-    color: #ffffffb3;
+    color: var(--tertaire-tekst);
 
     font-family: var(--font-body-bold-family);
     font-size:2em;
@@ -477,8 +528,16 @@ section:nth-of-type(4) {
       font-weight: 700;
 
     span {
-      color: var(--color-label-bg);
+      color: #ffffff;
     }
+  }
+
+  img {
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    max-height:100vh;
+    filter:none;
   }
 
   p {
@@ -488,7 +547,7 @@ section:nth-of-type(4) {
 
     font-family: var(--font-body-medium-family);
     font-size:1.1em;
-    color: var(--color-label-bg);
+    color: #ffffff;
   }
 
   a {
@@ -500,15 +559,16 @@ section:nth-of-type(4) {
     font-size:1.1em;
 
    text-decoration: none;
-   padding: 1em 1.5em;
+   padding: 0.5em 1em;
    background: rgba(255, 255, 255, .4);
-   color: var(--color-label-bg);
+   color: #000000;
    border-radius: var(--border-radius-button);
   }
 }
 
 @media (min-width: 768px) {
   section:nth-of-type(4) {
+
 
 
     h2 {
@@ -527,4 +587,5 @@ section:nth-of-type(4) {
     }
   }
 }
+
 

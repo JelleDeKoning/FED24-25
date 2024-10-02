@@ -78,8 +78,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/nav_breakdown.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -98,21 +96,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ 
+  | Choice         | Jelle              | Kim             | Debora           |
+  | ---            | ---                | ---             | ---              |
+  | Afwezig        | HTML Structuur     | HTML Structuur  | HTML Structuur   |
+  |                |                    |                 |                  |
+  | ...            | ...                | ...             | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - SVGs kunnen in css
+  - Media Queries uitgelegd
+  - Elke section moet een header hebben
 
 </details>
 
@@ -132,19 +129,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Choice         | Jelle                  | Kim                             | Debora           |
+  | ---            | ---                    | ---                             | ---              |
+  | HTML opbouw    |Dynamische grid maken   | Github problemen                | Tekst positioneren   |
+  |                |                        | Afbeeldingen over elkaar zetten |                  |
+  | ...            | ...                    | ...                             | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - De grid responsive maken dmv width en height en geen max-width
+  - Position Sticky op het 3d model maar dat is vieze code
+  - 
 - ...
 
 </details>
@@ -159,7 +156,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+    - Ik moet nog kijken naar de kleur van de tekst als je die selecteert en de TAB kleur. Dit heb ik aangepast.
+  - Een "skip to main content" knop moet nog komen.
+  - De alt tekst bij afbeeldingen moet nog verbeterd worden.
+- Video's mogen geen autoplay hebben
+- Contrast overal fixen.
+
 
 </details>
 
@@ -179,20 +181,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Choice      | Jelle         | Debora    | Kim        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | HTML  | Responsive grid maken             | Responsive grid maken   | Parallax scroll effect    |
+  | Website laten zien| Dark mode laten zien | SVGs ipv screenshots |  |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Van flexbox over gaan op grid dmv media query
 
 </details>
 
@@ -206,19 +205,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eind.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd door middel van media queries een responsive grid/flexbox te maken en automatisch te switchen tussen beide
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/grid.png" width="375px" alt="grid">
+    <img src="readme-images/flex.png" width="375px" alt="flex">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Hoewel dit vaak lukte met de grid ging het niet altijd goed en heb ik soms nog wel gestruggled
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/reviews.png" width="375px" alt="reviews">
+    <img src="readme-images/fout.png" width="375px" alt="bummer">
 </details>
 
 
@@ -234,8 +235,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [model-viewer](https://github.com/google/model-viewer/discussions/2743)
+  2. [html forms](https://www.w3schools.com/html/html_forms.asp)
+  3. [grid generator](https://cssgrid-generator.netlify.app/)
+  4. [grid areas](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_template_areas)
+  5. Bahaa & Sanne
 
 </details>

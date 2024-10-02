@@ -1,21 +1,19 @@
 // JavaScript Document
 console.log("hi");
 
-const hamburgerButton = document.querySelector("header button");
-const hamburgerClose = document.querySelector("header nav button");
+const hamburgerButton = document.querySelector("header > button");
+const hamburgerClose = document.querySelector("header nav:nth-of-type(2) > button");
 
 hamburgerButton.onclick = togggleMenu;
 hamburgerClose.onclick = togggleMenu;
 
 function togggleMenu() {
 
-  const deNav = document.querySelector("header nav");
+  const deNav = document.querySelector("header nav:nth-of-type(2)");
 
   deNav.classList.toggle("toonMenu");
 
 }
-
-console.log(hamburgerClose);
 
 function getMouse(e){
   return [
