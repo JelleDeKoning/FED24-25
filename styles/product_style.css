@@ -4,130 +4,11 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Blender Bold";
-  src: url("Blender-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Blender Strong";
-  src: url("Blender-Strong.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Blender Medium";
-  src: url("Blender-Medium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Blender Book";
-  src: url("Blender-Book.woff2") format("woff2");
-}
-
-:root {
-  --color-text: #000000;
-  --color-background: #eee;
-  --secundaire-tekst: #8d8d8d;
-  --tertaire-tekst:#ffffffb3;
-  --gradient-start: #f1f1f1;
-  --gradient-end: #afaeae;
-
-  --font-body-family: "Blender Book";
-  --font-body-style: normal;
-  --font-body-weight: 400;
-  --font-body-weight-bold: 400;
-  --font-body-medium-family: "Blender Medium";
-  --font-body-bold-family: "Blender Bold";
-  --font-heading-family: "Blender Strong";
-  --font-heading-style: normal;
-  --font-heading-weight: 400;
-
-  --color-label-bg: white;
-  --color-label-border: #d0d0d0;
-  --color-label-bg-checked: black;
-  --color-label-text-checked: white;
-  --color-product-link: #000;
-  --color-product-text: #8d8d8d;
-  --color-product-text-alt: #8d8d8d;
-  --color-button-bg: #eee;
-
-  --font-size-h1: 3.5em;
-  --font-size-h2: 2em;
-  --font-size-label: 1em;
-  --font-size-product-link: 19px;
-  --font-size-product-text: 16px;
-  --font-size-button: 1.2em;
-
-  --font-weight-h2: 700;
-  --font-weight-label: 500;
-  --font-weight-product-link: 700;
-  --font-weight-product-text: 400;
-  --font-weight-button: 500;
-
-  --line-height-h2: 1;
-  --line-height-label: 18px;
-  --line-height-product-link: 22px;
-  --line-height-product-text: 20px;
-  --line-height-button: 22px;
-
-  --letter-spacing-product-link: -0.4px;
-  --letter-spacing-product-text: -0.32px;
-  --letter-spacing-button: -0.4px;
-
-  --border-radius-label: 4px;
-  --border-radius-product-img: 8px;
-  --border-radius-product-link: 4px;
-  --border-radius-button: 0.5em;
-
-  --aspect-ratio-product-img: 205 / 274;
-  --aspect-ratio-button: 1 / 1;
-
-  --transition-duration: 0.3s;
-
-  
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --color-text: #ffffff;
-    --color-background: #121212;
-    --secundaire-tekst: #b3b3b3;
-    --tertaire-tekst: #ffffff80;
-
-    --gradient-start: #2a2a2a;
-    --gradient-end: #1a1a1a;
-  
-  --gradient-dark-start: #2a2a2a;
-  --gradient-dark-end: #1a1a1a;
-
-    --color-label-bg: #000000;
-    --color-label-border: #555555;
-    --color-label-bg-checked: #ffffff;
-    --color-label-text-checked: #000000;
-    --color-product-link: #ffffff;
-    --color-product-text: #b3b3b3;
-    --color-product-text-alt: #b3b3b3;
-    --color-button-bg: #444444;
-
-  
-  }
-
-
-  main {
-    background-color: #1a1a1a;
-
-  }
-
-  img,video  {
-    filter: brightness(0.8);  
-  }
 
 
 
 
 
-}
 
 body {
   overflow-x: hidden;
@@ -422,9 +303,7 @@ background-color:orangered;
   a:last-of-type {
     display: flex;
 
-    p:last-of-type {
     }
-  }
 }
 
 main > section:nth-of-type(2) {
@@ -685,9 +564,9 @@ Kruisje verwijderen uit zoekveld */
     align-items: center;
     border: none;
     background-color: transparent;
-    color:     color:var(--color-text);
+    color:var(--color-text);
     font-family: var(--font-body-medium-family);
-    font-size: 18px;
+    color: var(--color-text);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: -0.36px;
@@ -880,7 +759,9 @@ Kruisje verwijderen uit zoekveld */
 
     p:nth-of-type(3)
 
-
+    p:nth-of-type(3) {
+      /* Add your styles here */
+    }
 
     article:nth-of-type(2) {
       grid-area: artikel;
